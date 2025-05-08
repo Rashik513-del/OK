@@ -7,7 +7,8 @@
 # git diff => if you want to check what are the changes
 # gif.add => track all files
 # git commit -m "Your message"
-
+ 
+import json
 import requests
 from bs4 import BeautifulSoup
 import sqlite3
@@ -75,7 +76,7 @@ def scrape_books(url):
     return books
 
 def save_to_json(books):
-    import json
+   
 
     with open("books.json","w") as f:
         json.dump(books, f, indent=4, ensure_ascii=False)
