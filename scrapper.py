@@ -2,6 +2,12 @@
 # => get data from web(html,json,xml)
 #python -m pip install beautifulsoup4
 
+# git init => initialize git
+# git status => if you want to check what are the status of files
+# git diff => if you want to check what are the changes
+# gif.add => track all files
+# git commit -m "Your message"
+
 import requests
 from bs4 import BeautifulSoup
 import sqlite3
